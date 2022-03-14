@@ -1,36 +1,17 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <title>MapGL</title>
 </head>
+<body>
+<div id="root"></div>
 
-<body onload="initMap();">
-  <div id="map"></div>
-  <script src="./map4dsdk@2.0.0.dev.js"></script>
-  <script>
-    function initMap() {
-      let options = {
-        center: { lat: 16.072163491469226, lng: 108.22690536081757 },
-        zoom: 16,
-        controls: true,
-        mapType: "satellite"
-      }
-      let map = new map4d.Map(document.getElementById("map"), options)
-    }
-  </script>
-  
-  <style>
-    #map {
-      height: 100%;
-    }
+<script src="./react.development.js"></script>
+<script src="./react-dom.development.js"></script>
+<script src="./map4dsdk@2.0.0.dev.js"></script>
+<script src="./demo.development.js"></script>
 
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
 </body>
-
 </html>
